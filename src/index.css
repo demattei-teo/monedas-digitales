@@ -1,0 +1,155 @@
+@import url("https://fonts.googleapis.com/css2?family=Sansita+Swashed:wght@300&family=Tenor+Sans&display=swap");
+
+:root {
+  --tipografia-principal: "Sansita Swashed", cursive;
+  --tipografia-secundaria: "Tenor Sans", sans-serif;
+
+  --font-bold: 800;
+  --font-medium: 600;
+  --color-background: #000321;
+  --color-alpha-blanco: #ffffffbc;
+  --color-negro-alpha: #000000b3;
+}
+body {
+  background-color: #fff;
+  margin: 0;
+  box-sizing: border-box;
+}
+.bd__header {
+  width: 100%;
+  height: 10vh;
+  margin: 0 auto;
+  background-color: var(--color-background);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 50px;
+}
+.container__header{
+ width: 92%;
+ height: auto;
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+}
+.buttons__header {
+  background-color: transparent;
+  color: var(--color-alpha-blanco);
+  border: none;
+  cursor: pointer;
+}
+.form__buscador {
+  max-width: 360px;
+  height: 8vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.buscador__input {
+  background-color: transparent;
+  width: 250px;
+  height: 5vh;
+  border: 1px solid var(--color-alpha-blanco);
+  border-radius: 5px;
+  padding: 2px 2px;
+  color: var(--color-alpha-blanco);
+}
+p {
+  margin: 0;
+  color: var(--color-alpha-blanco);
+  font-family: var(--tipografia-secundaria);
+}
+th {
+  margin: 0;
+  color: var(--color-alpha-blanco);
+  font-family: var(--tipografia-secundaria);
+}
+/*contenedor de la tabla*/
+.container__tabla {
+  margin: 0 auto;
+  padding: 0px 10px;
+  max-width: 1024px;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.thead__tabla-criptomonedas tr{ 
+  width: 100%;
+  height: 10vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid var(--color-negro-alpha);
+}
+.thead__tabla-criptomonedas tr th {
+  color: #f89533;
+
+}
+.tabla__criptomonedas {
+  max-width: 1400px;
+  width: 100%;
+  border-collapse: collapse;
+  display: grid;
+
+  padding: 0px 10px;
+
+
+}
+
+.filas {
+  width: 100%;
+  height: 10vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid var(--color-negro-alpha);
+  text-align: center;
+
+}
+.th{
+  width: 100px;
+}
+.th__name{
+  width: 130px;
+  font-size: 14px;
+  color: var(--color-background);
+}
+.span__symbol{
+  color: #00000061;
+  font-size: 12px;
+}
+.th__precio{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-background);
+}
+.th__ath{
+  color: var(--color-background);
+}
+.porcentaje__negativo{
+ font-size: 14px;
+ color: #ff0000;
+}
+.porcentaje__positivo{
+  font-size: 14px;
+  color: #48ff00;
+}
+.after_responsive{
+  display: none;
+}
+
+.logo_img {
+  width: 30px;
+  height: 30px;
+}
+
+
+
+@media screen and (min-width:760px) {
+  .after_responsive{
+    display: block;
+  }
+}
