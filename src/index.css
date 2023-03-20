@@ -71,8 +71,8 @@ th {
   max-width: 1024px;
   min-height: 100vh;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: flex-start;
+  align-items: flex-start;
 }
 .thead__tabla-criptomonedas tr{ 
   width: 100%;
@@ -89,9 +89,9 @@ th {
 .tabla__criptomonedas {
   max-width: 1400px;
   width: 100%;
-  border-collapse: collapse;
+ 
   display: grid;
-
+  
   padding: 0px 10px;
 
 
